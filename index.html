@@ -1,43 +1,56 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio Gabin Leballais</title>
+    <title>Portfolio</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header class="header">
-        <a href="#" class="logo">G.LEBALLAIS</a>
+    <header>
         <nav>
-            <a href="#">Formation</a>
-            <a href="#">Projets</a>
-            <a href="#">Expériences professionnelles</a>
-            <a href="#">Compétences</a>
-            <a href="#">Contact</a>
+            <div class="logo">
+                <a href="#">My Portfolio</a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
         </nav>
     </header>
-    <div class="container">
-        <div class="content">
-            <div class="profile">
-                <img src="https://via.placeholder.com/200" alt="Photo de Gabin Leballais">
-            </div>
-            <div class="details">
-                <h1>PORTFOLIO GABIN LEBALLAIS</h1>
-                <h2>Alternant technicien développement et qualification</h2>
-                <p>
-                    Mes expériences sportives et mes compétences en communication ont renforcé ma capacité à travailler en équipe
-                    et à contribuer efficacement à des projets personnels et professionnels. Mon objectif est de poursuivre ma passion
-                    pour la mécanique en combinant le design et la conception mécanique.
-                    Afin de mieux s'en rendre compte voir :
-                </p>
-                <a href="#" id="projects-link">Mes projets</a>
-            </div>
-            <div class="mechanical-image">
-                <img src="https://via.placeholder.com/600" alt="Image mécanique de remplacement">
-            </div>
+    <section id="home" class="hero">
+        <h1>Welcome to My Portfolio</h1>
+        <p>Discover my work and projects.</p>
+    </section>
+    <section id="about" class="about">
+        <h2>About Me</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum vestibulum.</p>
+    </section>
+    <section id="projects" class="projects">
+        <h2>Projects</h2>
+        <div class="project-card">
+            <h3>Project Title</h3>
+            <p>Description of the project.</p>
         </div>
-    </div>
+        <!-- Add more project cards as needed -->
+    </section>
+    <section id="contact" class="contact">
+        <h2>Contact</h2>
+        <form action="submit_form.php" method="POST">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+    <footer>
+        <p>&copy; 2024 My Portfolio. All rights reserved.</p>
+    </footer>
     <script src="script.js"></script>
 </body>
 </html>
