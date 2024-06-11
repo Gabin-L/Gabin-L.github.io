@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,54 +7,37 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
+    <header class="header">
+        <a href="#" class="logo">G.LEBALLAIS</a>
         <nav>
-            <div class="logo">
-                <a href="#">G.LEBALLAIS</a>
-            </div>
-            <ul class="nav-links">
-                <li><a href="#">Formation</a></li>
-                <li><a href="#">Projets</a></li>
-                <li><a href="#">Expériences professionnelles</a></li>
-                <li><a href="#">Compétences</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-            <div class="linkedin">
-                <a href="#">LinkedIn</a>
-            </div>
+            <a href="#">Formation</a>
+            <a href="#">Projets</a>
+            <a href="#">Expériences professionnelles</a>
+            <a href="#">Compétences</a>
+            <a href="#">Contact</a>
         </nav>
     </header>
-    <main>
-        <section class="profile">
-            <img src="profile.jpg" alt="Gabin Leballais" class="profile-image">
-            <div class="profile-info">
-                <h1>PORTFOLIO GABIN LEBALLAIS</h1>
-                <h2>Alternant technicien<br>développement et qualification</h2>
-                <p>
-                    Mes expériences sportives et mes compétences en communication ont renforcé ma capacité à travailler en équipe et à contribuer efficacement à des projets personnels et professionnels. Mon objectif est de poursuivre ma passion pour la mécanique en combinant le design et la conception mécanique. Afin de mieux s'en rendre compte voir :
-                </p>
-                <button class="projects-btn">Mes projets</button>
+    <div class="container">
+        <div class="content">
+            <div class="profile">
+                <img src="https://via.placeholder.com/200" alt="Photo de Gabin Leballais">
             </div>
-        </section>
-        <section class="project-image">
-            <img src="project.jpg" alt="Project Image">
-        </section>
-    </main>
-    <footer>
-        <div class="contact">
-            <a href="#">Me contacter</a>
+            <div class="details">
+                <h1>PORTFOLIO GABIN LEBALLAIS</h1>
+                <h2>Alternant technicien développement et qualification</h2>
+                <p>
+                    Mes expériences sportives et mes compétences en communication ont renforcé ma capacité à travailler en équipe
+                    et à contribuer efficacement à des projets personnels et professionnels. Mon objectif est de poursuivre ma passion
+                    pour la mécanique en combinant le design et la conception mécanique.
+                    Afin de mieux s'en rendre compte voir :
+                </p>
+                <a href="#" id="projects-link">Mes projets</a>
+            </div>
+            <div class="mechanical-image">
+                <img src="https://via.placeholder.com/600" alt="Image mécanique de remplacement">
+            </div>
         </div>
-        <div class="footer-nav">
-            <a href="#">LinkedIn</a>
-            <a href="#">CV</a>
-        </div>
-        <div class="legal">
-            <p>Portfolio à usage non-commercial</p>
-            <p>©Tous droits réservés 2024-2025 - Gabin Leballais | gleballais</p>
-            <a href="#">Politique de cookies</a>
-            <a href="#">Politique de confidentialité</a>
-            <a href="#">Mentions légales</a>
-        </div>
-    </footer>
+    </div>
+    <script src="script.js"></script>
 </body>
 </html>
