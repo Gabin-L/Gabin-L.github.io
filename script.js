@@ -1,17 +1,19 @@
-document.addEventListener('DOMContentLoaded', () => {
-    // Fonction pour ajouter un effet hover à l'image de profil
-    const profileImage = document.querySelector('.profile img');
-    profileImage.addEventListener('mouseover', () => {
-        profileImage.style.border = '5px solid yellow';
-    });
-    profileImage.addEventListener('mouseout', () => {
-        profileImage.style.border = 'none';
-    });
+// scripts.js
 
-    // Fonction pour afficher une alerte lorsque le lien "Mes projets" est cliqué
-    const projectsLink = document.getElementById('projects-link');
-    projectsLink.addEventListener('click', (event) => {
+document.addEventListener("DOMContentLoaded", () => {
+    const form = document.querySelector("form");
+
+    form.addEventListener("submit", (event) => {
         event.preventDefault();
-        alert('Lien vers les projets cliqué !');
+
+        const name = document.getElementById("name").value;
+        const email = document.getElementById("email").value;
+        const message = document.getElementById("message").value;
+
+        if (name && email && message) {
+            alert("Form submitted successfully!");
+        } else {
+            alert("Please fill out all fields.");
+        }
     });
 });
