@@ -1,4 +1,4 @@
-document.addEventListener('DOMContentLoaded', (event) => {
+document.addEventListener('DOMContentLoaded', () => {
     // Fonction pour ajouter un effet hover à l'image de profil
     const profileImage = document.querySelector('.profile img');
     profileImage.addEventListener('mouseover', () => {

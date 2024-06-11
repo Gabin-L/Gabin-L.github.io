@@ -10,41 +10,43 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 100%;
     padding: 20px;
-    background-color: #111;
+    background-color: #000;
 }
 
-.header a {
+.header .logo {
     color: yellow;
     text-decoration: none;
-    border: 1px solid yellow;
+    font-weight: bold;
+    border: 2px solid yellow;
     padding: 5px 10px;
-    border-radius: 5px;
+    border-radius: 20px;
 }
 
 .header nav a {
+    color: #fff;
+    text-decoration: none;
     margin-left: 20px;
+    font-size: 1.1em;
 }
 
 .container {
     display: flex;
-    flex-direction: column;
+    justify-content: center;
     align-items: center;
-    padding: 20px;
+    padding: 40px;
+    background-color: #000;
 }
 
 .content {
     display: flex;
     justify-content: space-between;
-    width: 100%;
+    align-items: center;
     max-width: 1200px;
+    width: 100%;
 }
 
 .profile {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     text-align: center;
 }
 
@@ -56,24 +58,34 @@ body {
 }
 
 .details {
-    max-width: 600px;
-    padding: 20px;
+    max-width: 500px;
+    margin-left: 20px;
 }
 
 .details h1 {
+    font-size: 2em;
     margin-bottom: 10px;
 }
 
+.details h2 {
+    font-size: 1.5em;
+    color: #aaa;
+    margin-bottom: 20px;
+}
+
 .details p {
+    line-height: 1.6;
     margin-bottom: 20px;
 }
 
 .details a {
+    display: inline-block;
     background-color: yellow;
     color: black;
     text-decoration: none;
     padding: 10px 20px;
     border-radius: 5px;
+    font-weight: bold;
     transition: background-color 0.3s;
 }
 
