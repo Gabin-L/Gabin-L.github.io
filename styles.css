@@ -1,5 +1,4 @@
-/* styles.css */
-
+/* Basic styles for layout and typography */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -7,88 +6,37 @@ body {
 }
 
 header {
-    background-color: #333;
+    background: #333;
     color: white;
-    padding: 1rem;
-    text-align: center;
+    padding: 10px 0;
 }
 
-header nav ul {
+nav ul {
     list-style: none;
-    margin: 0;
-    padding: 0;
     display: flex;
     justify-content: center;
 }
 
-header nav ul li {
-    margin: 0 1rem;
+nav ul li {
+    margin: 0 15px;
 }
 
-header nav ul li a {
+nav ul li a {
     color: white;
     text-decoration: none;
 }
 
+main {
+    padding: 20px;
+}
+
 section {
-    padding: 2rem;
-    text-align: center;
-}
-
-#portfolio .gallery {
-    display: flex;
-    justify-content: center;
-    gap: 1rem;
-}
-
-#portfolio .item {
-    background-color: #f4f4f4;
-    padding: 1rem;
-    border: 1px solid #ccc;
-    width: 200px;
-    text-align: center;
-}
-
-form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 1rem;
-}
-
-form label {
-    width: 100%;
-    max-width: 400px;
-    text-align: left;
-}
-
-form input, form textarea {
-    width: 100%;
-    max-width: 400px;
-    padding: 0.5rem;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-}
-
-form button {
-    padding: 0.5rem 2rem;
-    border: none;
-    background-color: #333;
-    color: white;
-    cursor: pointer;
-    border-radius: 4px;
-}
-
-form button:hover {
-    background-color: #555;
+    margin-bottom: 40px;
 }
 
 footer {
-    background-color: #333;
+    background: #333;
     color: white;
     text-align: center;
-    padding: 1rem;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
+    padding: 10px 0;
 }
