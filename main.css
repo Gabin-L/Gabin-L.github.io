@@ -2,6 +2,8 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    background-color: #121212;
+    color: white;
 }
 
 header {
@@ -9,35 +11,47 @@ header {
     color: white;
     padding: 1rem;
     text-align: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
 }
 
 nav ul {
     list-style: none;
     padding: 0;
+    display: flex;
+    justify-content: center;
+    margin: 0;
 }
 
 nav ul li {
-    display: inline;
     margin: 0 1rem;
 }
 
 nav ul li a {
     color: white;
     text-decoration: none;
+    transition: color 0.3s;
 }
 
 nav ul li a:hover {
-    text-decoration: underline;
+    color: #ffd700;
 }
 
 section {
-    padding: 2rem;
+    padding: 6rem 2rem 2rem;
     margin: 1rem 0;
 }
 
 section h2 {
-    color: #333;
-    border-bottom: 2px solid #333;
+    color: #ffd700;
+    border-bottom: 2px solid #ffd700;
     padding-bottom: 0.5rem;
 }
 
@@ -53,6 +67,23 @@ section p {
     line-height: 1.6;
 }
 
+button {
+    background-color: #ffd700;
+    color: black;
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    margin-top: 1rem;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #ffa500;
+}
+
 form {
     display: flex;
     flex-direction: column;
@@ -66,9 +97,12 @@ form input, form textarea {
     margin-bottom: 1rem;
     padding: 0.5rem;
     font-size: 1rem;
+    background-color: #222;
+    border: 1px solid #444;
+    color: white;
 }
 
-button {
+form button {
     background-color: #333;
     color: white;
     border: none;
@@ -76,7 +110,7 @@ button {
     cursor: pointer;
 }
 
-button:hover {
+form button:hover {
     background-color: #555;
 }
 
@@ -90,24 +124,28 @@ footer {
     width: 100%;
 }
 
-footer a {
+.footer-links a {
     color: white;
     text-decoration: none;
     margin: 0 0.5rem;
+    transition: color 0.3s;
 }
 
-footer a:hover {
-    text-decoration: underline;
+.footer-links a:hover {
+    color: #ffd700;
 }
 
 @media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+    }
+
     nav ul li {
-        display: block;
         margin: 0.5rem 0;
     }
 
     section {
-        padding: 1rem;
+        padding: 8rem 1rem 1rem;
     }
 
     footer {

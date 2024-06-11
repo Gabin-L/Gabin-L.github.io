@@ -8,12 +8,12 @@
 </head>
 <body>
     <header>
-        <h1>Portfolio Gabin Leballais</h1>
+        <h1 class="logo">G.LEBALLAIS</h1>
         <nav>
             <ul>
                 <li><a href="#formation">Formation</a></li>
                 <li><a href="#projets">Projets</a></li>
-                <li><a href="#experiences">Expériences</a></li>
+                <li><a href="#experiences">Expériences professionnelles</a></li>
                 <li><a href="#competences">Compétences</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
@@ -23,6 +23,7 @@
         <img src="photo_cv.jpg" alt="Photo de Gabin Leballais">
         <p>Alternant technicien développement et qualification.</p>
         <p>Mes expériences sportives et mes compétences en communication ont renforcé ma capacité à travailler en équipe et à contribuer efficacement à des projets personnels et professionnels. Mon objectif est de poursuivre ma passion pour la mécanique en combinant le design et la conception mécanique.</p>
+        <button id="showProjects">Mes projets</button>
     </section>
     <section id="formation">
         <h2>Formation</h2>
@@ -30,10 +31,11 @@
     </section>
     <section id="projets">
         <h2>Projets</h2>
-        <p>Détail de vos projets personnels et professionnels...</p>
+        <div id="projectsContainer"></div>
+        <button id="addProject">Ajouter un projet</button>
     </section>
     <section id="experiences">
-        <h2>Expériences Professionnelles</h2>
+        <h2>Expériences professionnelles</h2>
         <p>Détail de vos expériences professionnelles...</p>
     </section>
     <section id="competences">
@@ -54,9 +56,12 @@
     </section>
     <footer>
         <p>© Tous droits réservés 2024-2025 - Gabin Leballais</p>
-        <a href="#contact">Me contacter</a>
-        <a href="https://www.linkedin.com" target="_blank">LinkedIn</a>
-        <a href="cv.pdf" target="_blank">CV</a>
+        <div class="footer-links">
+            <a href="#contact">Me contacter</a>
+            <a href="https://www.linkedin.com" target="_blank">LinkedIn</a>
+            <a href="cv.pdf" target="_blank">CV</a>
+        </div>
     </footer>
+    <script src="scripts.js"></script>
 </body>
 </html>
