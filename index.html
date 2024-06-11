@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio Gabin Leballais</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Gabin Leballais Portfolio</title>
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
     <header>
@@ -25,23 +25,44 @@
         </section>
         <section id="projects">
             <h2>Projects</h2>
-            <!-- Add project details here -->
+            <div class="project">
+                <img src="assets/images/project1.jpg" alt="Project 1">
+                <h3>Project Title</h3>
+                <p>Project description goes here.</p>
+            </div>
+            <!-- Repeat for more projects -->
         </section>
         <section id="experience">
             <h2>Experience</h2>
-            <!-- Add experience details here -->
+            <div class="experience">
+                <h3>Job Title</h3>
+                <p>Job description goes here.</p>
+            </div>
+            <!-- Repeat for more experiences -->
         </section>
         <section id="skills">
             <h2>Skills</h2>
-            <!-- Add skills details here -->
+            <ul>
+                <li>Skill 1</li>
+                <li>Skill 2</li>
+                <!-- Repeat for more skills -->
+            </ul>
         </section>
         <section id="contact">
             <h2>Contact</h2>
-            <!-- Add contact form or details here -->
+            <form id="contact-form">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+                <label for="message">Message</label>
+                <textarea id="message" name="message" required></textarea>
+                <button type="submit">Send</button>
+            </form>
         </section>
     </main>
     <footer>
-        <p>© 2024-2025 Gabin Leballais | gleballais</p>
+        <p>© 2024 Gabin Leballais | gleballais</p>
     </footer>
     <script src="js/scripts.js"></script>
 </body>
