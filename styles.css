@@ -10,7 +10,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px;
+    padding: 20px 40px;
     background-color: #000;
 }
 
@@ -24,10 +24,13 @@ body {
 }
 
 .header nav a {
-    color: #fff;
+    color: yellow;
     text-decoration: none;
     margin-left: 20px;
     font-size: 1.1em;
+    border: 1px solid yellow;
+    padding: 5px 10px;
+    border-radius: 5px;
 }
 
 .container {
@@ -44,6 +47,7 @@ body {
     align-items: center;
     max-width: 1200px;
     width: 100%;
+    color: #fff;
 }
 
 .profile {
@@ -55,6 +59,7 @@ body {
     width: 200px;
     height: 200px;
     object-fit: cover;
+    margin-right: 20px;
 }
 
 .details {
@@ -69,7 +74,7 @@ body {
 
 .details h2 {
     font-size: 1.5em;
-    color: #aaa;
+    color: #ccc;
     margin-bottom: 20px;
 }
 
@@ -96,17 +101,44 @@ body {
 .mechanical-image img {
     max-width: 600px;
     border-radius: 10px;
+    margin-left: 20px;
 }
 
 @media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+    }
+
+    .header nav a {
+        margin-left: 0;
+        margin-top: 10px;
+    }
+
     .content {
         flex-direction: column;
         align-items: center;
     }
 
-    .profile,
-    .mechanical-image {
+    .profile img,
+    .mechanical-image img {
         display: none;
+    }
+
+    .details {
+        margin-left: 0;
+        text-align: center;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    .content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .profile img,
+    .mechanical-image img {
+        margin: 20px 0;
     }
 
     .details {
