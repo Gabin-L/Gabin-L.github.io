@@ -35,7 +35,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    color: yellow;
+    color: #FFFF00;
 }
 
 main {
@@ -63,7 +63,7 @@ section {
 .profile-section h1 {
     margin-top: 10px;
     font-size: 1.5em;
-    color: yellow;
+    color: #FFFF00;
 }
 
 .profile-img {
@@ -80,12 +80,12 @@ section {
 }
 
 .home-text h1 {
-    font-size: 2em;
+    font-size: 2.5em;
     margin-bottom: 10px;
 }
 
 .home-text h2 {
-    font-size: 1.2em;
+    font-size: 1.5em;
     margin-bottom: 20px;
 }
 
@@ -98,64 +98,16 @@ section {
     display: inline-block;
     padding: 10px 20px;
     background-color: transparent;
-    color: yellow;
+    color: #FFFF00;
     text-decoration: none;
-    border: 2px solid yellow;
+    border: 2px solid #FFFF00;
     border-radius: 5px;
     transition: background-color 0.3s, color 0.3s;
 }
 
 .button:hover {
-    background-color: yellow;
-    color: black;
-}
-
-.project, .experience, .skill, .formation {
-    background-color: #222;
-    padding: 20px;
-    border-radius: 5px;
-    margin-bottom: 20px;
-}
-
-.project img, .experience img, .skill img {
-    width: 100%;
-    height: auto;
-    border-radius: 5px;
-}
-
-form {
-    display: flex;
-    flex-direction: column;
-}
-
-form label {
-    margin-top: 10px;
-}
-
-form input, form textarea {
-    padding: 10px;
-    margin-top: 5px;
-    margin-bottom: 10px;
-    width: 100%;
-    box-sizing: border-box;
-    background-color: #333;
-    color: white;
-    border: none;
-    border-radius: 5px;
-}
-
-form button {
-    padding: 10px;
-    background-color: #333;
-    color: white;
-    border: none;
-    cursor: pointer;
-    border-radius: 5px;
-    transition: background-color 0.3s;
-}
-
-form button:hover {
-    background-color: #555;
+    background-color: #FFFF00;
+    color: #000;
 }
 
 footer {
@@ -163,4 +115,16 @@ footer {
     color: white;
     text-align: center;
     padding: 10px 0;
+    margin-top: 20px;
+    border-top: 1px solid #444;
+}
+
+footer a {
+    color: #FFFF00;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+footer a:hover {
+    color: #FF4500;
 }
