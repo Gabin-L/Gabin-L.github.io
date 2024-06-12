@@ -1,13 +1,13 @@
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #000;
-    color: #fff;
+    background-color: #0d0d0d;
+    color: #ffffff;
 }
 
 header {
-    background-color: #333;
+    background-color: #1a1a1a;
     padding: 10px 0;
     display: flex;
     justify-content: center;
@@ -17,7 +17,7 @@ header {
 nav ul {
     list-style-type: none;
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
     margin: 0;
     padding: 0;
 }
@@ -27,43 +27,51 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #fff;
+    color: #ffffff;
     text-decoration: none;
     position: relative;
     padding: 10px;
     transition: color 0.3s;
+    font-weight: 700;
 }
 
 nav ul li a:hover {
-    color: #FFFF00;
+    color: #ffd700;
 }
 
 main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     padding: 20px;
 }
 
 section {
+    width: 100%;
+    max-width: 1200px;
     margin-bottom: 40px;
 }
 
 .home-container {
     display: flex;
-    align-items: center;
+    flex-direction: row;
     justify-content: space-between;
-    flex-wrap: nowrap;
-    padding: 20px;
-    background-color: #111;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 40px;
+    background-color: #0d0d0d;
 }
 
 .profile-section {
     text-align: center;
-    margin-right: 20px;
+    margin-bottom: 20px;
 }
 
-.profile-section h1 {
+.profile-section .profile-name {
     margin-top: 10px;
     font-size: 1.5em;
-    color: #FFFF00;
+    color: #ffd700;
+    font-family: 'Roboto Condensed', sans-serif;
 }
 
 .profile-img {
@@ -77,20 +85,21 @@ section {
 .home-text {
     max-width: 600px;
     margin: 20px;
-    flex-grow: 1;
+    text-align: left;
 }
 
-.home-text h1 {
+.home-text .main-title {
     font-size: 2.5em;
     margin-bottom: 10px;
+    font-family: 'Roboto Condensed', sans-serif;
 }
 
-.home-text h2 {
+.home-text .subtitle {
     font-size: 1.5em;
     margin-bottom: 20px;
 }
 
-.home-text p {
+.home-text .description {
     font-size: 1em;
     margin-bottom: 20px;
 }
@@ -99,38 +108,59 @@ section {
     display: inline-block;
     padding: 10px 20px;
     background-color: transparent;
-    color: #FFFF00;
+    color: #ffd700;
     text-decoration: none;
-    border: 2px solid #FFFF00;
+    border: 2px solid #ffd700;
     border-radius: 5px;
     transition: background-color 0.3s, color 0.3s;
 }
 
 .button:hover {
-    background-color: #FFFF00;
-    color: #000;
+    background-color: #ffd700;
+    color: #0d0d0d;
+}
+
+.design-image {
+    max-width: 400px;
+    margin: 20px;
 }
 
 .design-img {
-    max-width: 600px;
-    margin-left: 20px;
+    width: 100%;
+    height: auto;
 }
 
 footer {
-    background-color: #333;
+    background-color: #1a1a1a;
     color: white;
     text-align: center;
-    padding: 10px 0;
+    padding: 20px 0;
     margin-top: 20px;
-    border-top: 1px solid #444;
+    border-top: 1px solid #333;
 }
 
-footer a {
-    color: #FFFF00;
+footer .contact-title {
+    color: #ffd700;
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+footer .contact-link {
+    color: #ffd700;
     text-decoration: none;
     margin: 0 10px;
 }
 
-footer a:hover {
-    color: #FF4500;
+footer .contact-link:hover {
+    color: #ff4500;
+}
+
+footer .footer-link {
+    color: #ffffff;
+    text-decoration: none;
+    margin: 0 5px;
+}
+
+footer .footer-link:hover {
+    color: #ffd700;
 }
