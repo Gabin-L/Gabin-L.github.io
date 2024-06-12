@@ -38,7 +38,6 @@ nav ul li a:hover {
     color: #FFFF00;
 }
 
-
 main {
     padding: 20px;
 }
@@ -109,6 +108,11 @@ section {
 .button:hover {
     background-color: #FFFF00;
     color: #000;
+}
+
+.design-img {
+    max-width: 400px;
+    margin-top: 20px;
 }
 
 footer {
