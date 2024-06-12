@@ -122,6 +122,33 @@ section {
     height: auto;
 }
 
+.experience {
+    background-color: #222;
+    padding: 20px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.experience img {
+    border-radius: 5px;
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    margin-right: 20px;
+}
+
+.experience h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.experience p {
+    font-size: 1em;
+    margin: 0;
+}
+
 form {
     display: flex;
     flex-direction: column;
