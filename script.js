@@ -3,16 +3,21 @@ document.addEventListener('DOMContentLoaded', () => {
     navLinks.forEach(link => {
         link.addEventListener('click', (event) => {
             event.preventDefault();
-            const targetId = event.target.getAttribute('href').split('.html')[0];
-            document.getElementById(targetId).scrollIntoView({ behavior: 'smooth' });
+            const targetId = link.getAttribute('href').split('.')[0];
+            const targetElement = document.getElementById(targetId);
+            if (targetElement) {
+                targetElement.scrollIntoView({ behavior: 'smooth' });
+            }
         });
     });
 
     const contactForm = document.getElementById('contact-form');
-    contactForm.addEventListener('submit', (event) => {
-        event.preventDefault();
-        // Form submission logic
-        alert('Form submitted successfully!');
-        contactForm.reset();
-    });
+    if (contactForm) {
+        contactForm.addEventListener('submit', (event) => {
+            event.preventDefault();
+            // Form submission logic
+            alert('Form submitted successfully!');
+            contactForm.reset();
+        });
+    }
 });
