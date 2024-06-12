@@ -12,6 +12,7 @@ header {
 }
 
 nav ul {
+    list-style-type: none;
     display: flex;
     justify-content: center;
     margin: 0;
@@ -85,14 +86,14 @@ section {
     background-color: orange;
 }
 
-.project, .experience {
+.project, .experience, .skill, .formation {
     background-color: #222;
     padding: 20px;
     border-radius: 5px;
     margin-bottom: 20px;
 }
 
-.project img {
+.project img, .experience img, .skill img {
     width: 100%;
     height: auto;
 }
