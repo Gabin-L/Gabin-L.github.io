@@ -8,38 +8,63 @@ body {
 
 header {
     background-color: #1a1a1a;
-    padding: 10px 0;
+    padding: 10px 20px;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
 }
 
-nav ul {
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.nav-left .logo-button {
+    color: #ffd700;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 1.2em;
+    border: 2px solid #ffd700;
+    padding: 5px 15px;
+    border-radius: 25px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.nav-left .logo-button:hover {
+    background-color: #ffd700;
+    color: #0d0d0d;
+}
+
+.nav-right {
     list-style-type: none;
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
     margin: 0;
     padding: 0;
 }
 
-nav ul li {
-    margin: 0 20px;
+.nav-right li {
+    margin: 0 10px;
 }
 
-nav ul li a {
+.nav-right li a {
     color: #ffffff;
     text-decoration: none;
     position: relative;
-    padding: 10px;
+    padding: 5px 15px;
     transition: color 0.3s;
     font-weight: 700;
 }
 
-nav ul li a:hover {
+.nav-right li a:hover {
     color: #ffd700;
 }
 
-main {
+.main {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -189,4 +214,23 @@ footer {
     font-size: 1.2em;
     color: #ffd700;
     margin-bottom: 10px;
+}
+
+/* Effet de fade-in pour les liens */
+.fade-link {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.fade-link:hover {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Effet sticky pour les liens */
+.sticky-link {
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 10px;
 }
