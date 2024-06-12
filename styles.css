@@ -121,13 +121,14 @@ section {
 }
 
 .design-image {
-    max-width: 400px;
-    margin: 20px;
+    position: relative;
+    overflow: hidden;
 }
 
 .design-img {
     width: 100%;
     height: auto;
+    transform: translateZ(0); /* Fixes rendering issues */
 }
 
 footer {
