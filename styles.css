@@ -17,8 +17,8 @@ header {
 nav ul {
     list-style-type: none;
     display: flex;
-    justify-content: center;
-    margin: 0;
+    justify-content: right;
+    margin: 50px;
     padding: 0;
 }
 
