@@ -17,7 +17,7 @@ header {
 nav ul {
     list-style-type: none;
     display: flex;
-    justify-content: flex-end;
+    justify-content: flex-end; /* Aligns the nav items to the right */
     margin: 0;
     padding: 0;
 }
@@ -37,6 +37,7 @@ nav ul li a {
 nav ul li a:hover {
     color: #FFFF00;
 }
+
 
 main {
     padding: 20px;
