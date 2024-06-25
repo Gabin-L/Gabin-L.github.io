@@ -172,7 +172,6 @@ footer {
 .footer-top {
     display: flex;
     flex-direction: row-reverse;
-    flex-direction: row-reverse;
     justify-content: space-around;
     padding-bottom: 10px;
 }
