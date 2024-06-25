@@ -84,11 +84,13 @@ section {
     align-items: center;
     padding: 40px;
     background-color: #0d0d0d;
+    transition: background-color 0.5s, color 0.5s;
 }
 
 .profile-section {
     text-align: center;
     margin-bottom: 20px;
+    padding: 0 5px;
 }
 
 .profile-section .profile-name {
@@ -100,8 +102,8 @@ section {
 
 .profile-img {
     border-radius: 50%;
-    width: 180px;
-    height: 180px;
+    width: 220px;
+    height: 220px;
     object-fit: cover;
     margin-bottom: 10px;
 }
@@ -113,19 +115,28 @@ section {
 }
 
 .home-text .main-title {
-    font-size: 2.5em;
+    font-size: 2em;
     margin-bottom: 10px;
     font-family: 'Roboto Condensed', sans-serif;
+    background-color: #383838;
+    transition: background-color 0.6s, color 0.6s;
+}
+
+.main-title:hover{
+  background-color: #101010;
+  transition: background-color 0.6s, color 0.6s;
 }
 
 .home-text .subtitle {
-    font-size: 1.5em;
+    font-size: 1.1em;
     margin-bottom: 20px;
+    color: #F0F0F0;
 }
 
 .home-text .description {
     font-size: 1em;
     margin-bottom: 20px;
+    color: #BEBEBE;
 }
 
 .button {
@@ -145,7 +156,7 @@ section {
 }
 
 .design-image {
-    margin-top: 100px;
+    margin-top: 50px;
     overflow: hidden;
 }
 
