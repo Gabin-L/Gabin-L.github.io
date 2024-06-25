@@ -163,13 +163,15 @@ footer {
 }
 
 .footer-container {
+    display: flex;
+    flex-direction: row;
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 10px;
 }
 
 .footer-top {
-    display: flex;
+    display: grid;
     flex-direction: row-reverse;
     align-items: center;
     padding-bottom: 10px;
