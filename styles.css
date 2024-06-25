@@ -184,13 +184,11 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    justify-content: center;
     font-size: 0.875em;
 }
 
 .footer-links,
 .policy-links {
-    display: flex;
     justify-content: center;
     margin: 10px 0;
 }
