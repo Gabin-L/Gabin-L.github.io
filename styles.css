@@ -106,8 +106,8 @@ section {
 
 .home-text {
     max-width: 600px;
-    margin: 20px;
-    text-align: center;
+    margin: 0 50px;
+    text-align: left;
 }
 
 .home-text .main-title {
