@@ -157,7 +157,7 @@ footer {
     background-color: #1a1a1a;
     color: white;
     text-align: center;
-    padding: 20px 0;
+    padding: 10px 0;
     margin-top: 20px;
     border-top: 1px solid #333;
 }
@@ -165,7 +165,7 @@ footer {
 .footer-container {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 0 20px;
+    padding: 0 10px;
 }
 
 .footer-top {
@@ -182,7 +182,7 @@ footer {
 
 .footer-bottom {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
     font-size: 0.875em;
 }
