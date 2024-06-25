@@ -170,7 +170,7 @@ footer {
 
 .footer-top {
     display: flex;
-    flex-direction: column;
+    flex-direction: row-reverse;
     align-items: center;
     padding-bottom: 10px;
 }
