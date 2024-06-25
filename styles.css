@@ -78,7 +78,7 @@ section {
 
 .home-container {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
     padding: 40px;
     background-color: #0d0d0d;
